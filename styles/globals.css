@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    h1, h2, h3, h4, h5, h6, span, p, div, a, tspan {
+      @apply text-black dark:text-white;
+    }
+}
+
+.toggle-checkbox{
+    height: 0px;
+    width: 0px;
+    opacity: 0;
+}
+.toggle{
+    height: 29px;
+    width: 29px;
+    position: absolute;
+    border-radius: 15px;
+    /* background-color: #04f; */
+    /* right: 50%; */
+    /* transition: all 2s; */
+}
+.toggle-switch{
+    /* border: solid 2px #04f; */
+    position: relative;
+    display: inline-block;
+    border-radius: 20px;
+    padding: 3px;
+    width: 67px;
+    height: 35px;
+}
+.toggled .toggle{
+    right: 3px;
+}

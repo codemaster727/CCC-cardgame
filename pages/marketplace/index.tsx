@@ -26,15 +26,13 @@ export default function MarketPlace(){
     // interfaces like Options come from the Highcharts module itself.
 
     return(
-        <div className="flex h-screen flex-col">
-            <Navbar>
-            </Navbar>
-            <h1 className="text-5xl text-center mb-4">DISCOVER <span className="dark:text-dark-color-bg-yellow">PACK CCC</span></h1>
-            <div className="flex flex-shrink-1 justify-between mx-16 p-4 pb-0 dark:bg-black">
+        <div className="flex flex-col">
+            <h1 className="text-5xl text-center mb-4">DISCOVER <span className="dark:text-dark-color-bg-yellow whitespace-nowrap">PACK CCC</span></h1>
+            <div className="flex flex-col md:flex-row flex-shrink-1 justify-between mx-4 md:mx-16 p-4 pb-0 dark:bg-black">
                 {/* <div className="flex-shrink-0 p-6 h-full title-font">qweqweqwe</div> */}
                 {/* <div className="flex-shrink-0 p-6 h-full subtitle-font">qweqweqwe</div> */}
                 
-                <div className="flex-shrink w-1/2 border-2 border-pink-900 border-opacity-50 p-2 mr-4">
+                <div className="flex-shrink mb-2 md:mb-0 w-full md:w-1/2 border-2 border-pink-900 border-opacity-50 p-2 mr-4">
                     <div className="h-6">
                         <div className="inline-block px-2 pb-0.5 bg-dark-color-bg-red shadow-sm text-xs dark:text-dark-color-bg-yellow dark:text-opacity-80">
                             <FontAwesomeIcon icon={faBolt} className="mr-2"></FontAwesomeIcon>
@@ -56,7 +54,7 @@ export default function MarketPlace(){
                     <div className="text-center dark:text-opacity-90"><FontAwesomeIcon icon={faHeart} className="mr-1 text-dark-color-bg-yellow"></FontAwesomeIcon>234</div>
                 </div>
                 
-                <div className="flex-shrink w-1/2 border-2 border-pink-900 border-opacity-50 p-2">
+                <div className="flex-shrink mb-2 md:mb-0 w-full md:w-1/2 border-2 border-pink-900 border-opacity-50 p-2">
                     <div className="h-6">
                         <div className="inline-block px-2 pb-0.5 bg-dark-color-bg-red shadow-sm text-xs dark:text-dark-color-bg-yellow dark:text-opacity-80">
                             <FontAwesomeIcon icon={faBolt} className="mr-2"></FontAwesomeIcon>
@@ -79,11 +77,11 @@ export default function MarketPlace(){
                 </div>
             </div>
 
-            <div className="flex flex-shrink-1 justify-between mx-16 p-4 dark:bg-black">
+            <div className="flex flex-col md:flex-row flex-shrink-1 justify-between mx-4 md:mx-16 p-4 dark:bg-black">
                 {/* <div className="flex-shrink-0 p-6 h-full title-font">qweqweqwe</div> */}
                 {/* <div className="flex-shrink-0 p-6 h-full subtitle-font">qweqweqwe</div> */}
                 
-                <div className="flex-shrink w-1/3 border-2 border-pink-900 border-opacity-50 p-2 mr-4">
+                <div className="flex-shrink mb-2 md:mb-0 w-full md:w-1/3 border-2 border-pink-900 border-opacity-50 p-2 mr-4">
                     <div className="h-6">
                         {/* <div className="inline-block px-2 pb-0.5 bg-dark-color-bg-red shadow-sm text-xs dark:text-dark-color-bg-yellow dark:text-opacity-80">
                             <FontAwesomeIcon icon={faBolt} className="mr-2"></FontAwesomeIcon>
@@ -105,7 +103,7 @@ export default function MarketPlace(){
                     <div className="text-center dark:text-opacity-90"><FontAwesomeIcon icon={faHeart} className="mr-1 text-dark-color-bg-yellow"></FontAwesomeIcon>234</div>
                 </div>
                 
-                <div className="flex-shrink w-1/3 border-2 border-pink-900 border-opacity-50 p-2 mr-4">
+                <div className="flex-shrink mb-2 md:mb-0 w-full md:w-1/3 border-2 border-pink-900 border-opacity-50 p-2 mr-4">
                     <div className="h-6">
                         <div className="inline-block px-2 pb-0.5 bg-dark-color-bg-red shadow-sm text-xs dark:text-dark-color-bg-yellow dark:text-opacity-80">
                             <FontAwesomeIcon icon={faTimes} className="mr-2"></FontAwesomeIcon>
@@ -127,7 +125,7 @@ export default function MarketPlace(){
                     <div className="text-center dark:text-opacity-90"><FontAwesomeIcon icon={faHeart} className="mr-1 text-dark-color-bg-yellow"></FontAwesomeIcon>234</div>
                 </div>
 
-                <div className="flex-shrink w-1/3 border-2 border-pink-900 border-opacity-50 p-2">
+                <div className="flex-shrink mb-2 md:mb-0 w-full md:w-1/3 border-2 border-pink-900 border-opacity-50 p-2">
                     <div className="h-6">
                         <div className="inline-block px-2 pb-0.5 bg-dark-color-bg-red shadow-sm text-xs dark:text-dark-color-bg-yellow dark:text-opacity-80">
                             <FontAwesomeIcon icon={faBolt} className="mr-2"></FontAwesomeIcon>

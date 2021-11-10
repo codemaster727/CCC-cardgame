@@ -34,8 +34,6 @@ export default function DashBoard(){
     }
     return(
         <div className="flex h-screen flex-col">
-            <Navbar>
-            </Navbar>
             <div className="flex flex-shrink-1 h-full justify-between bg-light-color-main-99 dark:bg-dark-color-main-99 ">
                 <div className="flex-shrink-0 p-6 h-full">
                 </div>

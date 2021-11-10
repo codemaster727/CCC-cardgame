@@ -28,29 +28,27 @@ export default function CardPack(){
     // interfaces like Options come from the Highcharts module itself.
 
     return(
-        <div className="flex h-screen flex-col">
-            <Navbar>
-            </Navbar>
-            <div className="flex flex-shrink-1 justify-between mx-16 p-8 pl-24 dark:bg-black border-2 border-pink-900 border-opacity-50 dark:bg-pink-300 dark:bg-opacity-5 p-5">
+        <div className="flex flex-col">
+            <div className="flex flex-col md:flex-row flex-shrink-1 justify-between mx-4 md:mx-16 md:p-8 md:pl-24 dark:bg-black border-2 border-pink-900 border-opacity-50 dark:bg-pink-300 dark:bg-opacity-5 p-5">
                 {/* <div className="flex-shrink-0 p-6 h-full title-font">qweqweqwe</div> */}
                 {/* <div className="flex-shrink-0 p-6 h-full subtitle-font">qweqweqwe</div> */}
-                <div className="flex-shrink w-3/5">
-                    <img className="w-1/2 mx-32 my-6" src="/img/card-uncommon.png"></img>
+                <div className="flex-shrink w-full md:w-3/5">
+                    <img className="w-4/5 md:w-1/2 mx-auto md:mx-32 my-6" src="/img/card-uncommon.png"></img>
                 </div>
-                <div className="flex-shrink w-2/5">
-                    <h1 className="text-5xl">5 CARD PACK UNCOMMON</h1>
-                    <div className="flex flex-shrink-1 justify-between py-6 border-b-2 border-pink-900 border-opacity-50">
+                <div className="flex-shrink w-full md:w-2/5">
+                    <h1 className="text-3xl md:text-5xl">5 CARD PACK UNCOMMON</h1>
+                    <div className="flex flex-col md:flex-row text-center flex-shrink-1 justify-between py-6 border-b-2 border-pink-900 border-opacity-50">
                         <ul className="breadcrumb">
                             <li className="pr-6 dark:text-red-100 dark:text-opacity-70">Views 10k</li>
                             <li className="dark:text-red-100 dark:text-opacity-70">In Stock: 5</li>
                         </ul>
-                        <div className="flex flex-shrink">
+                        <div className="flex flex-shrink text-center justify-center">
                             <div className="px-2 py-1 border border-dark-color-bg-yellow border-opacity-80 mr-2"><FontAwesomeIcon icon={faHeart} className="mr-1 text-pink-500"></FontAwesomeIcon>234</div>
                             <div className="px-2 py-1 border border-dark-color-bg-yellow border-opacity-80 mr-2"><FontAwesomeIcon icon={faShareAlt} size="sm" className="mr-1 text-gray-300"></FontAwesomeIcon></div>
                             <div className="px-2 py-1 border border-dark-color-bg-yellow border-opacity-80"><FontAwesomeIcon icon={faEllipsisH} className="text-gray-300"></FontAwesomeIcon></div>
                         </div>
                     </div>
-                    <div className="my-6 px-4 py-2 border-2 border-pink-900 border-opacity-50">
+                    <div className="my-6 px-4 py-2 border-2 border-pink-900 border-opacity-50 text-center md:text-left">
                         <p>Current Price</p>
                         <h1 className="text-4xl">10 BUSD</h1>
                         <button className="button w-3/5 p-1 my-4 text-black text-center bg-dark-color-bg-yellow hover:bg-dark-color-bg-yellow-hover">Buy Now</button>

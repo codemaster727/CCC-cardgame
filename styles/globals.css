@@ -12,12 +12,14 @@
     height: 0px;
     width: 0px;
     opacity: 0;
+    
 }
 .toggle{
     height: 29px;
     width: 29px;
     position: absolute;
     border-radius: 15px;
+    transition: left 1s linear;
     /* background-color: #04f; */
     /* right: 50%; */
     /* transition: all 2s; */
@@ -34,3 +36,48 @@
 .toggled .toggle{
     right: 3px;
 }
+
+@font-face {
+    font-family: "Evil Empire";
+    src: url("/Fonts/title/EvilEmpire.otf");
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+}
+  @font-face {
+    font-family: "Legend M54";
+    src: url("/Fonts/subtitle/LegendM54.ttf");
+    font-style: medium;
+    font-weight: 400;
+    font-display: swap;
+}
+
+.title-font {
+    font-family: Evil Empire;
+}
+.subtitle-font {
+    font-family: Legend M54;
+}
+
+/* Style the list */
+ul.breadcrumb {
+    list-style: none;
+    color: gray;
+  }
+  
+  /* Display list items side by side */
+  ul.breadcrumb li {
+    display: inline;
+    /* color: gray; */
+  }
+
+  ul.breadcrumb li a {
+    color: rgba(254, 226, 226, 0.7);
+  }
+  
+  /* Add a slash symbol (/) before/behind each list item */
+  ul.breadcrumb li:not(:first-child)+li:before {
+    padding: 1.5rem;
+    color: gray;
+    content: "\203A";
+  }

@@ -12,6 +12,9 @@ module.exports = {
           "main-3": "#292F56",    // navbar border color
           "main-4": "#272C48",    // icon-button background color
           "main-99": "#070A20",   // background color
+          "bg-yellow": "#FFDE93",
+          "bg-yellow-hover": "#FFD36F",
+          "bg-red": "#6C1B28",
         },
         "light-color": {
           "main-1": "#EDEEF5",    // navbar background color

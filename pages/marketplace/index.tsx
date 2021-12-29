@@ -13,6 +13,7 @@ import Head from "next/head";
 import { faShareAlt, faEllipsisH, faBolt, faFireAlt, faTimes } from '@fortawesome/free-solid-svg-icons';
 import { faHeart } from '@fortawesome/free-regular-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import Image from 'next/image';
 
 export default function MarketPlace(){
     const {theme, setTheme} = useTheme();
@@ -43,7 +44,7 @@ export default function MarketPlace(){
                             Rare
                         </div>
                     </div>
-                    <img className="w-1/4 mx-auto my-2" src="/img/card-uncommon.png"></img>
+                    <Image className="w-1/4 mx-auto my-2" src="/img/card-uncommon.png"/>
                     <p>5 Card Pack Rare</p>
 
                     <div className="float-left dark:text-dark-color-bg-yellow dark:text-opacity-80">10 BUSD</div>
@@ -65,7 +66,7 @@ export default function MarketPlace(){
                             Rare
                         </div>
                     </div>
-                    <img className="w-1/4 mx-auto my-2" src="/img/card-uncommon.png"></img>
+                    <Image className="w-1/4 mx-auto my-2" src="/img/card-uncommon.png"/>
                     <p>5 Card Pack Rare</p>
 
                     <div className="float-left dark:text-dark-color-bg-yellow dark:text-opacity-80">10 BUSD</div>
@@ -92,7 +93,7 @@ export default function MarketPlace(){
                             Rare
                         </div> */}
                     </div>
-                    <img className="w-1/4 mx-auto my-2" src="/img/card-uncommon.png"></img>
+                    <Image className="w-1/4 mx-auto my-2" src="/img/card-uncommon.png"/>
                     <p>5 Card Pack Common</p>
 
                     <div className="float-left dark:text-dark-color-bg-yellow dark:text-opacity-80">10 BUSD</div>
@@ -114,7 +115,7 @@ export default function MarketPlace(){
                             Rare
                         </div> */}
                     </div>
-                    <img className="w-1/4 mx-auto my-2" src="/img/card-uncommon.png"></img>
+                    <Image className="w-1/4 mx-auto my-2" src="/img/card-uncommon.png"/>
                     <p>5 Card Pack Uncommon</p>
 
                     <div className="float-left dark:text-dark-color-bg-yellow dark:text-opacity-80">10 BUSD</div>
@@ -136,7 +137,7 @@ export default function MarketPlace(){
                             Rare
                         </div>
                     </div>
-                    <img className="w-1/4 mx-auto my-2" src="/img/card-uncommon.png"></img>
+                    <Image className="w-1/4 mx-auto my-2" src="/img/card-uncommon.png"/>
                     <p>5 Card Pack Rare</p>
 
                     <div className="float-left dark:text-dark-color-bg-yellow dark:text-opacity-80">10 BUSD</div>

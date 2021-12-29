@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { ReactNode, useState } from 'react';
 import { useRouter } from 'next/router'
+import Image from 'next/image';
 
 interface SidebarInterface {
     mode: "dark" | "light",
@@ -160,7 +161,7 @@ const Sidebar = ({open = false}) => {
                 </nav>
                 <div className="px-3 py-3 ">
                     <a className="w-14 h-14 hover:text-gray-800 hover:bg-indigo-400 text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-gray-100 transition-colors duration-200 flex items-center p-2 rounded-lg" href="#">
-                        <img className="w-8 h-8 m-auto" src="/icons/icon_logout.png" />
+                        <Image className="w-8 h-8 m-auto" src="/icons/icon_logout.png" />
                         { open ? 
                         <span className="mx-4 font-medium">
                             Support

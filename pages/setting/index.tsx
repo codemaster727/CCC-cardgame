@@ -2,14 +2,14 @@ import { Navbar } from '../../components/Navbar';
 import Sidebar from '../../components/Sidebar';
 import { RoundPanel } from '../../components/Panels/RoundPanel';
 import { IconButton } from '../../components/Buttons/IconButton';
-import { Dropdown } from '../../components/Dropdown/Dropdown';
+import Dropdown from '../../components/Dropdown/Dropdown';
 import { ExpandDropdown } from '../../components/Dropdown/ExpandDropdown';
 // import { ToggleButton } from '../../components/Buttons/ToggleButton';
 import Toggle from '../../components/Buttons/ToggleButton';
 // import { Collapse } from 'react-collapse';
 import { useTheme } from 'next-themes'
 
-export default function (){
+export default function Setting (){
     const {theme, setTheme} = useTheme();
     return(
         <div className="flex h-screen flex-col">

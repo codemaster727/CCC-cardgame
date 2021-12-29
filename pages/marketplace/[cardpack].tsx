@@ -13,6 +13,7 @@ import Head from "next/head";
 import { faHeart, faShareAlt, faEllipsisH } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useRouter } from 'next/router'
+import Image from 'next/image';
 
 export default function CardPack(){
     const {theme, setTheme} = useTheme();
@@ -33,7 +34,7 @@ export default function CardPack(){
                 {/* <div className="flex-shrink-0 p-6 h-full title-font">qweqweqwe</div> */}
                 {/* <div className="flex-shrink-0 p-6 h-full subtitle-font">qweqweqwe</div> */}
                 <div className="flex-shrink w-full md:w-3/5">
-                    <img className="w-4/5 md:w-1/2 mx-auto md:mx-32 my-6" src="/img/card-uncommon.png"></img>
+                    <Image className="w-4/5 md:w-1/2 mx-auto md:mx-32 my-6" src="/img/card-uncommon.png"/>
                 </div>
                 <div className="flex-shrink w-full md:w-2/5">
                     <h1 className="text-3xl md:text-5xl">5 CARD PACK UNCOMMON</h1>

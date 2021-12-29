@@ -2,7 +2,7 @@ import { Navbar } from '../../components/Navbar';
 import Sidebar from '../../components/Sidebar';
 import { RoundPanel } from '../../components/Panels/RoundPanel';
 import { IconButton } from '../../components/Buttons/IconButton';
-import { Dropdown } from '../../components/Dropdown/Dropdown';
+import Dropdown from '../../components/Dropdown/Dropdown';
 import { ExpandDropdown } from '../../components/Dropdown/ExpandDropdown';
 import { ApexOptions } from '../../components/ApexOptions';
 // import { Collapse } from 'react-collapse';

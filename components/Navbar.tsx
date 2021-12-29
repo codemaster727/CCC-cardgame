@@ -7,6 +7,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // import { fab } from '@fortawesome/free-brands-svg-icons'
 import MyDropdown from '../components/Dropdown/Dropdown'
 import { useRouter } from "next/router";
+import Image from 'next/image';
 
 const logoUrl = "/Logo CCC (2021)@2x-8.png";
 interface NavbarInterface {
@@ -40,26 +41,26 @@ export const Navbar = ({
     useEffect(() => {
         document.documentElement.classList.add('dark')
         setTheme('dark')
-      }, [])
-    const { state, dispatch } = useContext(Context);
-    const connect = () => {
-        if(!state.wallet.address) {
-            dispatch({
-                type: "WALLET",
-                payload: {
-                    address: "0x123"
-                }
-            })
-        }
-        else {
-            dispatch({
-                type: "WALLET",
-                payload: {
-                    address: ""
-                }
-            })
-        }
-    }
+    }, [])
+    // const { state, dispatch } = useContext(Context);
+    // const connect = () => {
+    //     if(!state.wallet.address) {
+    //         dispatch({
+    //             type: "WALLET",
+    //             payload: {
+    //                 address: "0x123"
+    //             }
+    //         })
+    //     }
+    //     else {
+    //         dispatch({
+    //             type: "WALLET",
+    //             payload: {
+    //                 address: ""
+    //             }
+    //         })
+    //     }
+    // }
 
     const router = useRouter()
 
@@ -85,7 +86,7 @@ export const Navbar = ({
                         <div className="flex items-center justify-between h-16">
                             <div className="flex items-center cursor-pointer">
                                 <Link href="/dashboard">
-                                    <img className="h-auto w-10" src={logoUrl} alt="Workflow"/>
+                                    <Image className="h-auto w-10" src={logoUrl} alt="Workflow"/>
                                 </Link>
                             </div>
                             <div className="hidden md:block">
@@ -94,10 +95,10 @@ export const Navbar = ({
                             <div className="md:block w-8">
                                 <div className="w-max px-4 py-1 border-2 border-green-700 cursor-pointer">
                                     
-                                    <a className="dark:text-green-300 block relative" onClick={() => connect()}>
+                                    {/* <a className="dark:text-green-300 block relative" onClick={() => connect()}>
                                         <span className="dark:text-green-300">{state.wallet.address?"Wallet Connected":"Wallet Connect"}</span>
                                         {state.wallet.address&&<FontAwesomeIcon className="ml-2" icon={faCheck} />}
-                                    </a>
+                                    </a> */}
                                     { openPopup }
                                 </div>
                             </div>

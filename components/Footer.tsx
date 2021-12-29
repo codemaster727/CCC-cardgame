@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useTheme } from 'next-themes'
 import Link from 'next/link';
+import Image from 'next/image';
 import { faAngleRight } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
@@ -30,7 +31,7 @@ export default function Footer(){
         <div className="flex flex-col flex-shrink-1 md:flex-row mt-4 md:mt-12 border-t-2 border-white justify-between p-8">
             <div className="flex-shrink-0 p-6">
                 <Link href="/dashboard">
-                    <img className="h-auto w-10 mb-4" src={logoUrl} alt="Workflow"/>
+                    <Image className="h-auto w-10 mb-4" src={logoUrl} alt="Workflow"/>
                 </Link>
                 <p>A turn based card<br/>dueling platform</p>
             </div>
